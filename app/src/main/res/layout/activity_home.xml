@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivRegLogo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="55dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logocardioease" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Fill the Details Below:"
+                android:textColor="#910B01"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_text"
+
+                android:drawablePadding="10dp"
+                android:hint="@string/namehint"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_text"
+                android:drawablePadding="10dp"
+                android:hint="@string/ageHint"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/male"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chest Pain Type:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:id="@+id/bloodpressure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_text"
+                android:drawablePadding="10dp"
+                android:hint="@string/restbloodpre"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/cholestrol"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_text"
+                android:drawablePadding="10dp"
+                android:hint="@string/chloestrol"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fasting Blood Sugar:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="YES"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/maxheartrate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_text"
+
+                android:drawablePadding="10dp"
+                android:hint="@string/maxheartrate"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise Induced Angina:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="YES"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#CD3E3E"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/stdepression"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_text"
+
+                android:drawablePadding="10dp"
+                android:hint="@string/stdpress"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ST Slope Type:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/maxvessels"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_text"
+
+                android:drawablePadding="10dp"
+                android:hint="@string/maxvessels"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#F4F0F0"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thalassemia Type:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#CD3E3E"
+                android:layout_marginTop="10dp"/>
+
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/Diagnose_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/round_button"
+                android:text="@string/predictv"
+                android:textColor="#FFFFFF"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
